@@ -1,0 +1,48 @@
+/* Estilos para o corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso centraliza verticalmente na janela */
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/fundo.jpg'); /* Substitua 'caminho_da_sua_imagem.jpg' pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o corpo */
+    background-position: center; /* Centraliza a imagem no corpo */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    font-family: Arial, sans-serif; /* Defina a fonte desejada para o texto */
+}
+
+/* Estilos para a div container */
+.caixa {
+    text-align: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    color: white;
+    height: 200px;
+}
+
+/* Estilos para o input dentro da div */
+.caixa input {
+    width: 40%; /* Ocupa 100% da largura da div */
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn{
+    width: 90%; /* Ocupa 100% da largura da div */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.btn:hover{
+    background-color: rgb(34, 99, 34) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+}

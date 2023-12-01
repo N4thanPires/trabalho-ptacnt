@@ -1,0 +1,30 @@
+
+.caixa {
+    text-align: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input {
+    /* Ocupa 100% da largura da div */
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn{
+     /* Ocupa 100% da largura da div */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.btn:hover{
+    background-color: rgb(34, 99, 34) ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+}
