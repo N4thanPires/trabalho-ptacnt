@@ -40,17 +40,17 @@ export default function Login() {
   
   return (
     <div className="caixa">
-      <h1>Login</h1>
+      <h1>LOGIN</h1>
       <form onSubmit={handlerLogin}>
         
         <input
-          placeholder='leo@gmail.com'
+          placeholder='Email:'
           type="email"
           
           onChange={(e) => { setUser({ ...user, email: e.target.value }) }}>
         </input>
         <input
-          placeholder='123'
+          placeholder='Senha:'
           type='password'
           
           onChange={(e) => { setUser({ ...user, password: e.target.value }) }}>

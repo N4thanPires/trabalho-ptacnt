@@ -18,7 +18,7 @@ export default function Registro() {
 
   function registro(e) {
     e.preventDefault();
-    toast.success('ebaaaaaaa');
+    toast.success('feito');
   }
 
   return (
