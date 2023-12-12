@@ -3,28 +3,38 @@
     text-align: center; /* Centraliza horizontalmente o conteúdo dentro da div */
     padding: 20px;
     border-radius: 5px;
+    font-weight: bold;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
     color: white;
 }
 
 input {
-    /* Ocupa 100% da largura da div */
-    padding: 10px;
-    margin: 3px;
-    border: none;
-    border-radius: 8px;
+    width: 18vh;
+    padding: 20px;
+    backdrop-filter: blur(90px);
+    background-color: rgba(255, 255, 255, 0);
+    height: 2vh; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none; 
 }
 
 .btn{
-     /* Ocupa 100% da largura da div */
+    margin-top: 10px;
+    width: 25vh;
+    height: 4vh;
     padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: none;
+    background-color:antiquewhite;
+    border-radius: 30px;
     margin-top: 3%;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
 }
 
-.btn:hover{
-    background-color: rgb(34, 99, 34) ;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: none;
+.btn:hover {
+    transition: 1s;
+    color: antiquewhite;
+    background-color: rgb(142, 121, 145);
 }
