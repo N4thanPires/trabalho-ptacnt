@@ -1,23 +1,25 @@
 /* Estilos para o navbar transparente */
 body {
-    height: 100vh; /* Isso centraliza verticalmente na janela */
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url('../img/fundo.jpg'); /* Substitua 'caminho_da_sua_imagem.jpg' pelo caminho da sua imagem de fundo */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o corpo */
-    background-position: center; /* Centraliza a imagem no corpo */
-    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
-    font-family: Arial, sans-serif; /* Defina a fonte desejada para o texto */
+    background-image: url('../img/f6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
 }
+
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3); /* Fundo com transparência usando RGBA */
+    backdrop-filter: blur(200p); /* Desfoque no fundo do navbar */
+
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px; /* Aumenta a altura do navbar */
+    height: 60px;
 }
 
 .navbar li {
@@ -28,21 +30,29 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Transição suave na mudança de cor */
+}
+
+/* Adiciona um efeito de borda ao texto no hover */
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
 }
 
 /* Estilização do botão "Limpar" */
 .clear {
-    background-color: #ff5733; /* Cor vermelha */
-    border: none;
+    background-color: transparent;
+    border: 2px solid #581386; /* Borda vermelha */
     color: #fff;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px; /* Borda ligeiramente arredondada */
-    padding: 8px 16px; /* Espaçamento interno do botão */
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transições suaves */
 }
 
 /* Quando o botão está no estado hover (sobre ele) */
 .clear:hover {
-    background-color: #ff3c1f; /* Cor vermelha mais escura no hover */
-    text-decoration: none; /* Remove o sublinhado no hover */
+    background-color: #581386;
+    color: #fff;
+    text-decoration: none;
 }
