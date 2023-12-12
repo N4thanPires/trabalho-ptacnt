@@ -1,17 +1,18 @@
 'use client'
 import { validateToken } from "../functions/validateToken";
 import Cookies from "js-cookie";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import '../pages/css/navbar.css';
 
 export default function Navbar() {
-    const { push, replace } = useRouter();
+    const { push, refresh } = useRouter();
 
     const removeCookies = async (e) => {
         e.preventDefault();
         Cookies.remove('token');
         localStorage.removeItem('name');
-        replace('/');
+        push('/')
+        refresh();
     }
 
     return (
@@ -23,5 +24,5 @@ export default function Navbar() {
                 <li><button className="clear" onClick={removeCookies}>LIMPAR</button></li>
             </ul>
         </div>
-    );
+    )
 }
