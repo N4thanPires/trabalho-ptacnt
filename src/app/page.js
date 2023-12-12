@@ -33,14 +33,14 @@ export default function Login() {
      
       push('/pages/dashboard');
     } catch {
-      toast.error("Erro de novo, poxa"); 
+      toast.error("iii, deu errado parça!"); 
     }
   }
 
   
   return (
     <div className="caixa">
-      <h1>LOGIN</h1>
+      <h1>Login</h1>
       <form onSubmit={handlerLogin}>
         
         <input
